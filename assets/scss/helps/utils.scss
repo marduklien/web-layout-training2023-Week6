@@ -1,0 +1,135 @@
+.armorwash {
+    color: #030303;
+}
+
+.yellow {
+    color: #FBFF22;
+}
+
+.red {
+    color: #C96464;
+}
+
+.text-gray-600 {
+    color: $gray-600;
+}
+
+.text-gray-900 {
+    color: $gray-900;
+}
+
+.border-radius-xs {
+    border-radius:2px
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+
+.link-primary {
+    color: $primary;
+    &:hover {
+      color: $citron !important;
+    }
+  }
+
+
+//  跑馬燈
+
+ .swiper{
+    background-color: #000;
+  }
+  .swiper
+  -wrapper {
+    transition-timing-function: linear;
+  }
+
+  .swiper-slide {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 3.2px;
+    width: auto;
+    color: #FBFF22;
+    background: #000;
+  }
+  
+
+@media (min-width: 576px) {
+//   .border-sm { ... }
+//   .border-sm-0 { ... }
+
+    .border-sm-0{       
+        --bs-border-width: 0px;
+    }
+
+    .border-sm-2 {       
+        --bs-border-width: 2px;
+    }
+
+    .border-sm-start-2 {
+        border-left: 2px !important;
+    }
+
+    .border-sm-top-2 {
+        border-top: 2px !important;
+    }
+
+    .border-sm-start-0 { 
+        border-left: 0 !important;
+     }
+
+     .border-sm-bottom-0 { 
+        border-bottom: 0 !important;
+     }
+    
+
+}
+
+    @media (min-width: 768px) {
+    //   .border-md { ... }
+    .border-md-start-0 { 
+        border-left: 0 !important;
+    }
+
+    .border-md-3 {       
+        --bs-border-width: 3px;
+    }
+
+    }
+
+    @media (min-width: 992px) {
+        .border-lg-start-0 { 
+            border-left: 0 !important;
+        }
+    }
+
+    @media (min-width: 1200px) {
+    //   .border-xl { ... }
+    //   .border-xl-0 { ... }
+    }
+
+    @media (min-width: 1400px) {
+    //   .border-xxl { ... }
+    //   .border-xxl-0 { ... }
+    }
+
+    // modal
+
+    .join-member-modal-close {
+        right: 24px;
+        top: 24px;
+    }
+
+    .btn-primary:hover {
+        background-color: $yellow;
+        color: $black;
+    }
+    
+    .btn-close-black {
+        color: #000000;
+        opacity: 1;
+    }
+  

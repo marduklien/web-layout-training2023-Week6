@@ -1,0 +1,33 @@
+
+// font
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+
+// icon
+@import "../vendor/icofont/icofont.min.css";
+
+//bootstrap 變數
+@import "../../node_modules/bootstrap/scss/functions";
+
+//修改
+@import './utils/variables';  // 
+@import './utils/utilitiesbs'; //文字斷點+Border
+
+//bootstrap
+@import "../../node_modules/bootstrap";
+
+//base
+@import './base';
+@import './breakpoint';
+
+//utils
+@import './helps/utils';
+@import './helps/pagination';
+
+//layout
+@import './layout/header';
+@import './layout/footer';
+
+//pages
+@import './pages/index';

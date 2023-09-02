@@ -1,0 +1,58 @@
+// 文字rwd
+// https://stackoverflow.com/questions/70273914/how-to-change-font-size-at-breakpoints-bootstrap-5
+$utilities: () !default;
+$utilities: map-merge(
+  
+  $utilities, 
+  (
+    
+    "font-size": (
+      rfs: true,
+      property: font-size,
+      class: fs,
+      values: $font-sizes,
+      responsive:true
+    ),
+    
+    
+  ), 
+  
+);
+
+
+// https://stackoverflow.com/a/75715691
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+$utilities: map-merge($utilities,
+    ("font-size": map-merge(map-get($utilities, "font-size"),
+        (responsive: true),
+      ),
+    ));
+
+$utilities: map-merge($utilities,
+    ("border": map-merge(map-get($utilities, "border"),
+        (responsive: true),
+      ),
+      "border-top": map-merge(map-get($utilities, "border-top"),
+        (responsive: true),
+      ),
+      "border-end": map-merge(map-get($utilities, "border-end"),
+        (responsive: true),
+      ),
+      "border-bottom": map-merge(map-get($utilities, "border-bottom"),
+        (responsive: true),
+      ),
+      "border-start": map-merge(map-get($utilities, "border-start"),
+        (responsive: true),
+      ),
+    ));
+
+
+@import "bootstrap/scss/utilities/api";
+@import 'bootstrap/scss/bootstrap';
+

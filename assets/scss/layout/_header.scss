@@ -1,0 +1,43 @@
+.logo {
+  background: url(../../assets/images/logo.png) left center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  width: 40px;
+  height: 40px;
+
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+
+  @include medium {
+    width: 53px;
+    height: 53px;
+  }
+}
+
+
+.navbar {
+  .search-Btn  {
+
+    width: 51px;
+    height: auto;
+
+    @media(max-width: 576px){
+      width: 40px;
+      height: auto;
+     }
+  }
+
+}
+
+
+.z-3 {
+  z-index: 3;
+}
+
+
+
+
+
+
